@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { WorkGrid } from './components/WorkGrid';
 import { ProjectDetail } from './components/ProjectDetail';
 import { Contact } from './components/Contact';
+import { DesignTemplate } from './components/DesignTemplate';
 
 const Home: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
           <Route path="/work" element={<WorkGrid />} />
           <Route path="/work/:id" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/design-template" element={<DesignTemplate />} />
         </Routes>
       </div>
     </Router>
